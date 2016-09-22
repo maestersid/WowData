@@ -46,6 +46,7 @@ namespace WowData.ViewModels
                 return WowRaceLoader.GetRaceById(_loadedData.Race);
             }
         }
+
         public int Level
         {
             get
@@ -68,6 +69,16 @@ namespace WowData.ViewModels
                 //http://{locale}.battle.net/static-render/{locale}/{thumbnail}
                 //http://us.battle.net/static-render/us/laughing-skull/168/109885352-avatar.jpg
                 return $"http://us.battle.net/static-render/us/{ _loadedData.Thumbnail}";
+            }
+        }
+
+        public string StaticRenderUrl
+        {
+            get
+            {
+                //http://render-api-<REGION>.worldofwarcraft.com/static-render/<REGION>/
+                var renderImage = _loadedData.Thumbnail.Replace("avatar", "profilemain");
+                return $"http://us.battle.net/static-render/us/{renderImage}";
             }
         }
 

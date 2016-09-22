@@ -6,7 +6,7 @@
   <StackLayout
 		Padding="20">
     
-    <Image x:Name="charThumbnail" Source="{Binding ThumbnailUrl}" WidthRequest="75" HeightRequest="75"/>
+    <Image Source="{Binding ThumbnailUrl}" WidthRequest="75" HeightRequest="75"/>
     
     <StackLayout
 			Orientation="Horizontal">
@@ -32,5 +32,8 @@
       <Label Text="Class: "/>
       <Label Text="{Binding ToonClass.Name}"/>
     </StackLayout>
+
+    <Image Source="{Binding StaticRenderUrl}"/>
+    
   </StackLayout>
 </ContentPage>

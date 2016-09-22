@@ -46,6 +46,9 @@
     <Compile Include="Views\CharacterMainView.xaml.cs">
       <DependentUpon>CharacterMainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ItemOverviewPage.xaml.cs">
+      <DependentUpon>ItemOverviewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -85,7 +88,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ItemOverviewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CharacterMainView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
