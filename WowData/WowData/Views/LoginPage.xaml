@@ -4,18 +4,16 @@
              x:Class="WowData.Views.LoginPage"
              Title="WoW Character Display">
   <StackLayout VerticalOptions ="LayoutOptions.Center" 
-               HorizontalOptions="LayoutOptions.Center">
+              >
     <Label
-			Text="Realm"
-      HorizontalTextAlignment="Center"/>
+			Text="Realm"/>
     <Entry
 			x:Name="RealmInfo"
 			Placeholder="Enter realm name"
       Text="{Binding RealmInfo}"
 			/>
     <Label
-			Text="Character Name"
-      HorizontalTextAlignment="Center"/>
+			Text="Character Name"/>
     <Entry
 			x:Name="CharName"
       Text="{Binding ToonName}"
