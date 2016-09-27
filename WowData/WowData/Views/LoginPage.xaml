@@ -1,17 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WowData.Views.LoginPage">
-  <StackLayout VerticalOptions ="LayoutOptions.Center">
+             x:Class="WowData.Views.LoginPage"
+             Title="WoW Character Display">
+  <StackLayout VerticalOptions ="LayoutOptions.Center" 
+               HorizontalOptions="LayoutOptions.Center">
     <Label
-			Text="Realm: " />
+			Text="Realm"
+      HorizontalTextAlignment="Center"/>
     <Entry
 			x:Name="RealmInfo"
 			Placeholder="Enter realm name"
       Text="{Binding RealmInfo}"
 			/>
     <Label
-			Text="Character Name: " />
+			Text="Character Name"
+      HorizontalTextAlignment="Center"/>
     <Entry
 			x:Name="CharName"
       Text="{Binding ToonName}"
